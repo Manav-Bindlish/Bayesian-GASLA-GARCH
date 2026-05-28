@@ -163,7 +163,7 @@ $$
 Given sorted draws $\{\theta_{(1)},\ldots,\theta_{(M)}\}$, the HPD interval of level $\alpha$ is
 
 $$
-\left[\theta_{(j^*)},\theta_{(j^*+m)}\right],\quad j^*=\arg\min_j\left(\theta_{(j+m)}-\theta_{(j)}\right),\ m=\lfloor\alpha M\rfloor
+\left[\theta_{(j_{min})}, \theta_{(j_{min}+m)}\right], \quad j_{min} = \arg\min_j\left(\theta_{(j+m)} - \theta_{(j)}\right), \ m = \lfloor\alpha M\rfloor
 $$
 
 ### 11) GARCH(1,1)
