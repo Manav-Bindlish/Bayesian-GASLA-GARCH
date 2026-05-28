@@ -123,27 +123,20 @@ $$
 
 Normal random-walk (for $\mu$ and $\alpha$):
 
-$$
-\mu^*=\mu+\epsilon_\mu,\quad \alpha^*=\alpha+\epsilon_\alpha,\quad \epsilon\sim\mathcal{N}(0,\tau^2)
-$$
+$$\mu_{new} = \mu + \epsilon_\mu, \quad \alpha_{new} = \alpha + \epsilon_\alpha, \quad \epsilon \sim \mathcal{N}(0,\tau^2)$$
+
 
 Log-normal random-walk (for $\beta$ and $\lambda$):
 
-$$
-\log\beta^*=\log\beta+\epsilon_\beta,\quad \log\lambda^*=\log\lambda+\epsilon_\lambda
-$$
+$$ \log\beta_{new} = \log\beta + \epsilon_\beta, \quad \log\lambda_{new} = \log\lambda + \epsilon_\lambda $$
 
 Jacobian correction:
 
-$$
-\log q(\theta\mid\theta^*)-\log q(\theta^*\mid\theta)=\log\beta-\log\beta^*,\quad \log\lambda-\log\lambda^*
-$$
+$$ \log q(\theta\mid\theta_{new}) - \log q(\theta_{new}\mid\theta) = \log\beta - \log\beta_{new}, \quad \log\lambda - \log\lambda_{new} $$
 
 ### 8) Robbins–Monro Adaptation
 
-$$
-\log\tau_k^{(t+1)}=\log\tau_k^{(t)}+\gamma_t\left(\bar{a}_k^{(t)}-a^*\right),\quad \gamma_t=t^{-0.6},\ a^*=0.44
-$$
+$$ \log\tau_k^{(t+1)} = \log\tau_k^{(t)} + \gamma_t\left(\bar{a}_k^{(t)} - a_{new}\right), \quad \gamma_t = t^{-0.6}, \ a_{new} = 0.44 $$
 
 ### 9) Bayes Estimators
 
