@@ -5,7 +5,6 @@ This repository implements the GASLa distribution, MH-within-Gibbs Bayesian infe
 ## Folder Structure
 
 ```
-research/
 ├─ run_analysis.py
 ├─ requirements.txt
 ├─ README.md
